@@ -1,4 +1,6 @@
 import os
+
+port = int(os.environ.get("PORT", 5000))
 import time
 import json
 import random
@@ -50,4 +52,4 @@ def main():
         time.sleep(random.uniform(1.0, 3.0))
 
 if __name__ == "__main__":
-    main()
+    app.run(host="0.0.0.0", port=port)
