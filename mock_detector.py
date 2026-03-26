@@ -1,12 +1,11 @@
 import os
 
-port = int(os.environ.get("PORT", 5000))
 import time
 import json
 import random
 import requests
 
-BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:3000/api/events")
+BACKEND_URL = os.getenv("BACKEND_URL")
 
 CAMPAIGNS = [
     {"id": "c_001", "name": "Promo Skincare Baru", "locations": ["Pakuwon Mall, Surabaya", "Tunjungan Plaza, Surabaya", "Grand Indonesia, Jakarta"]},
