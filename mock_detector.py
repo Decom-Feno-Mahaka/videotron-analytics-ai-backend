@@ -52,4 +52,4 @@ def main():
         time.sleep(random.uniform(1.0, 3.0))
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=port)
+    main()
